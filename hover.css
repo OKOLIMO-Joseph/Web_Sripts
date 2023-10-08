@@ -1,0 +1,11 @@
+table, td, th{
+    border: solid 5px;
+    width: 5%;
+    border-collapse: collapse;
+    padding: 20PX;
+    cursor: pointer;
+}
+
+    tr:hover{
+        background-color: goldenrod;
+    }
