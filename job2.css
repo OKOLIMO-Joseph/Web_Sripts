@@ -1,0 +1,23 @@
+
+body{
+    background-color: mediumturquoise;
+}
+footer{
+    color: black;
+    text-align: center;
+
+}
+fieldset{
+    text-align: left;
+    font-size: large;
+}
+button{
+    text-align: left;
+    color: brown;
+}
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
