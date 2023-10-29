@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counter Page</title>
+        <script>
+            let counter = 0;
+            function count(){
+                counter++;
+                document.querySelector('h1').innerHTML = counter;
+               // if(counter % 10 === 0){
+               //     alert('Boom!, You almost there!');
+               // } 
+            }
+                document.addEventListener('DOMContentLoaded', () =>{
+                    document.querySelector('button').onclick = count();
+                    setInterval(count, 1000);
+                });
+                
+                    
+        </script>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button onclick="count()">Click Here</button>
+    </body>
+</html>
