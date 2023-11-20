@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up Page</title>
+        <link rel="stylesheet" href="DropDown.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                //Change Bckgrnd to red
+                document.querySelector('select').onchange = function(){
+                document.querySelector('body').style.backgroundColor = this.value;
+                }
+                if(password.value != ConPswd.value){
+                  alert("Please your passwords are not matching!")
+                }
+                
+            })
+        </script>
+    </head>
+    <body>
+        <h2>Taste-Pal RESTAURANT</h2>
+        <div id="main">
+          <h2>Sign Up</h2>
+          <section>
+            <form>
+            <label htmlFor="username">Username:</label> <br>
+            <input type="text" id="username" name="username" /> <br><br>
+              <label htmlFor="email">Email Address:</label> <br>
+              <input type="email" id="email" name="email" /> <br><br>
+              <label htmlFor="password">Password:</label><br />
+              <input type="password" id="password" name="password" /> <br><br> 
+              <label htmlFor="ConPSwd">Confirm Password:</label> <br>
+              <input type="password" id="ConPSwd" name="conpassword"/> <br><br>
+              <button><input type="submit" value="Sign Up" name="SignUp-Btn"></button>
+            </form>
+          </section>
+          <section>
+            <h2>Click to change the color of the background</h2>
+            
+                <select>
+                    <option id="red" value="red">Red</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="Blue" value="blue">Blue</option>
+                    <option id="Blue" value="purple">Purple</option>
+                    <option id="Blue" value="pink">Pink</option>
+                    <option id="Blue" value="orange">Orange</option>
+                      
+                </select>
+        
+          </section>
+        </div>
+    </body>
+</html>
