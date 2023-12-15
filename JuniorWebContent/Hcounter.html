@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+        <script type="text/babel">
+            class Counter extends React.component{
+                constructor(props){
+                    super(props);
+                    this.state = {
+                        count: 0
+                    }
+                }
+                render(){
+                    return(
+                        <h1>{this.state.count}</h1>
+                        <button onclick={this.increment}>Incremnet</button>
+                        <button onclick={this.decrement}>Decremnet</button>
+                        <button onclick={this.reset}>Reset</button>
+                    )
+                }
+                increment = () =>{
+                    this.setState{
+                        count: this.state.count + 1;
+                    }
+                }
+                decrement = () =>{
+                    this.setstate{
+                        count: this.state.count - 1;
+                    }
+                }
+                reset = () =>{
+                    this.setState{
+                        count: 0;
+                    }
+                }
+            }
+            class App extends React.component{
+                render(){
+                    return(
+                        <Counter/>
+                        <Counter/>
+                    )
+                }
+            }
+        </script>
+    </body>
+</html>
