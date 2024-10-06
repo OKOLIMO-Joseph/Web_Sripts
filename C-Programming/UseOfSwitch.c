@@ -1,47 +1,36 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(){
 
-/* Comments to use
-A - excellent, You nailed it!
-B - very good, Keep it up!
-C - Good, but improve
-D - Fair, pull up your socks1
-F - You have failed*/
-
 char grade;
-grade = 'A', 'B', 'C', 'D', 'F';
-
 printf("Enter your letter grade \n");
 scanf("%c", &grade);
 
 switch(grade){
 
-case 'A':{
-    printf("Excellent, You nailed it! \n");
-    break;
-}
-case 'B':{
-    printf("Very good, Keep it up! \n");
-    break;
-}
-case 'C':{
-    printf("Good, but improve \n");
-    break;
-}
-case 'D':{
-    printf("Fair, pull up your socks! \n");
-    break;
-}
-case 'F':{
-    printf("You have failed \n");
-    break;
-}
-default:{
-    printf("Wrong entry, please input a correct letter grade \n");
-    break;
+case 'A':
+printf("Excellent! Keep it Up \n");
+break;
+
+case 'B':
+printf("Very good \n");
+break;
+
+case 'C':
+printf("That is good, but improve \n");
+break;
+
+case 'D':
+printf("That is fair, Aim higher \n");
+break;
+
+case 'F':
+printf("You have failed, Pull up your socks!!! \n");
+break;
+
+default:
+printf("Invalid entry, Please enter the correct letter grade \n");
 }
 
-}
     return 0;
 }
